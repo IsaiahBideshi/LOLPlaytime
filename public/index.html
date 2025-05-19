@@ -4,7 +4,37 @@
 	<meta charset="UTF-8">
 	<title>Title</title>
 </head>
-<body>
 
+<!--Code for font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="index.css">
+<script type="module" src="index.js"></script>
+
+<body>
+	<nav>
+		<form id="search-form">
+			<select name="region" id="category" method="post">
+				<option value="Americas">Americas</option>
+				<option value="Asia">Asia</option>
+				<option value="Europe">Europe</option>
+				<option value="Sea">Sea</option>
+			</select>
+
+			<input type="text" name="username" placeholder="Name#tag" required>
+
+			<button type="submit">Search</button>
+		</form>
+	</nav>
+
+	<main>
+		<div id="error-box">
+			<p id="error-message">
+				Name not found
+			</p>
+		</div>
+	</main>
 </body>
 </html>
